@@ -1,0 +1,137 @@
+html {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Helvetica';
+    -webkit-user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#card {
+    display: block;
+    text-align: center;
+    border: 1px solid rgba(255, 184, 126, 0.5);
+    border-radius: 8px;
+    width: 30rem;
+    padding: 1rem;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 .25rem rgba(255, 130, 130, 0.5), -.125rem -.125rem 1rem rgba(255, 142, 29, 0.5), .125rem .125rem 1rem rgba(255, 25, 17, 0.5);
+}
+
+#profile {
+    width: 150px;
+    height: 200px;
+    border-radius: 100%;
+    image-rendering: optimizeQuality;
+    object-fit: cover;
+}
+
+#name {
+    font-family: 'Lemon Milk';
+    font-size: 32px;
+    background: -webkit-linear-gradient(0deg,white 0%, rgba(254, 131, 25, 1) 35%, rgba(255, 38, 9, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#location {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    background: -webkit-linear-gradient(0deg, white 0%, rgb(230, 230, 230) 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(230, 230, 230);
+}
+
+#pin {
+    scale: 1.5;
+}
+
+#caption {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    background: -webkit-linear-gradient(0deg, white 0%, rgb(230, 230, 230) 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(230, 230, 230);
+}
+
+#html,
+#css,
+#javascript,
+#bootstrap,
+#git,
+#less-sass {
+    display: inline-flex;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.25rem 1rem;
+    margin: 4px;
+    font-size: 18px;
+}
+
+#html:hover, #css:hover, #javascript:hover, #bootstrap:hover, #git:hover, #less-sass:hover {
+    scale: 1.1;
+    background-color: aliceblue;
+    transition: 0.4s ease-out;
+    color: black;
+}
+
+#social-caption {
+    color: white;
+    font-size: 18px;
+    margin: 2rem 0;
+}
+
+#social {
+    scale: 2.5;
+    margin: 2rem 0;
+}
+
+#mail,
+#instagram,
+#linkedin,
+#github {
+    color: white;
+    padding: 0rem 0.25rem;
+}
+
+#mail:hover,
+#instagram:hover,
+#linkedin:hover,
+#github:hover {
+    scale: 1.1;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #card {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    #name {
+        font-size: 24px;
+    }
+
+    #location {
+        font-size: 18px;
+    }
+
+    #caption {
+        font-size: 14px;
+    }
+}
